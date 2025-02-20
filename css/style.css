@@ -1383,6 +1383,10 @@ section {
         grid-template-columns: 1fr;
 
     }
+      /* market-about */
+  .market-about{
+    padding: 2.5rem 10rem;
+}
 
 
 
@@ -1555,7 +1559,10 @@ section {
         grid-template-columns: 1fr;
 
     }
-
+  /* market-about */
+  .market-about{
+    padding: 2.5rem 8rem;
+}
 
 }
 
