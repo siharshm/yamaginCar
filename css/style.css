@@ -315,21 +315,21 @@ nav .navbar ul li .drop-down li:hover a {
 }
 
 .home .slide.slide-one {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgb(148, 108, 53)), url(/img/home/bg-hero-1.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgb(181, 176, 172)), url('../img/home/bg-hero-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home .slide.slide-two {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgb(247, 247, 246)), url(/img/home/bg-hero-2.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgb(221, 14, 14)), url('../img/home/bg-hero-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home .slide.slide-three {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgb(43, 171, 235)), url(/img/home/bg-hero-3.jpg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgb(43, 171, 235)), url('../img/home/bg-hero-3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -555,7 +555,7 @@ section {
 }
 
 
-/*----------------------------------------Arrival Section start------------------------------------*/
+/*Arrival Section start-*/
 .arrivals {
     text-align: center;
     padding-top: 7rem;
@@ -693,7 +693,7 @@ section {
 }
 
 
-/* -------------------------Brand section start ------------------------ */
+/*Brand section start*/
 .brand {
     text-align: center;
     padding-top: 7rem;
@@ -758,11 +758,110 @@ section {
     text-transform: uppercase;
 }
 
+
+/* Our service section start */
+
+.our-service {
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.our-service .service-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.our-service h1 {
+    padding-bottom: 4rem;
+    font-size: 4.7rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--text-color);
+
+}
+
+.our-service h1 span {
+    color: var(--main-color);
+}
+
+.service-box .card {
+    position: relative;
+    /* min-height: 220px; */
+    /* width: 320px; */
+    padding: 30px;
+    border-radius: 5px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    background: #fff;
+    /* margin-top: 10px 4px; */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.card i {
+    margin: 20px;
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card p{
+    color: #6c757d;
+}
+.card:hover i,
+.card:hover p
+{
+    color: #fff;
+}
+.card:hover h2{
+    font-weight: 400;
+}
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+    rgba(255,28,8,0.7)0%, rgba(185, 83, 74, 0.7)100%),url('../img/services/reg.jpg');
+    background-size: cover;
+}
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/service.jpg');
+    background-size: cover;
+}
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/warranty-image.jpg');
+    background-size: cover;
+}
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg,
+    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/advice.jpg');
+    background-size: cover;
+}
+.card:nth-child(5):hover{
+    background: linear-gradient(45deg,
+    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/leasing.jpg');
+    background-size: cover;
+}
+.card:nth-child(6):hover{
+    background: linear-gradient(45deg,
+    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/clearing-forwarding.jpg');
+    background-size: cover;
+}
+
+
 /* foooter section start */
 
 
 .footer {
     background: var(--text-color);
+    position: relative;
 
 }
 
@@ -883,6 +982,149 @@ section {
     color: var(--main-color);
 }
 
+/* scroll Top Button Adding */
+.scrollBtn {
+    position: absolute;
+    right: 5rem;
+    bottom: 1rem;
+    z-index: 100;
+    font-size: 3rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: var(--main-color);
+    color: #fff;
+    box-shadow: 0 0 5px var(--main-color);
+    border: 1px solid #fff;
+
+}
+
+.scrollBtn:hover {
+    background: var(--text-color);
+}
+
+
+/*---------------------------------------- About Us page Start--------------------------------------- */
+.inventory {
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/type/bg-type.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.inventory h2 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.inventory .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #fff;
+    padding-top: 2rem;
+}
+
+.inventory a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.market-about {
+    padding-top: 5rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+/* .market-about .row-1 {
+ flex: 1 1 20rem;
+}*/
+
+
+.market-about .row-1 h3 {
+    font-size: 3rem;
+    color: var(--text-color);
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.market-about .row-1 h3 span {
+    color: var(--main-color);
+
+}
+
+.market-about .row-1 p.text {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+.market-about .row-2 h3 {
+    font-size: 3rem;
+    color: var(--text-color);
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+
+}
+
+.market-about .row-2 h3 span {
+    color: var(--main-color);
+
+}
+
+.market-about .row-2 {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.market-about .row-2 p.text-1 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding-bottom: 1rem;
+    text-align: justify;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -915,7 +1157,7 @@ section {
         margin-right: 12rem;
     }
 
-    /* ---------------------------------home section query -------------------------------------------*/
+    /*home section query*/
 
     .home .slide {
         height: auto;
@@ -936,6 +1178,7 @@ section {
     }
 
 }
+
 
 @media(max-width:991px) {
     html {
@@ -964,7 +1207,7 @@ section {
 
     }
 
-    /* --------------------------------------navbar query @991 ---------------------------------------*/
+    /*navbar query*/
 
     .header {
 
@@ -972,14 +1215,16 @@ section {
     }
 
     /*Arrival section*/
-    .arrivals{
+    .arrivals {
         padding: 2.5rem 12rem;
     }
+
     .arrivals .arr-row {
 
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2.5rem;
     }
+
     /* brand section */
     .brand {
         padding: 2.5rem 12rem;
@@ -994,7 +1239,12 @@ section {
     .brand h1 {
         font-size: 4rem;
     }
-    
+
+    /* Service section */
+    .our-service{
+        padding: 2.5rem 12rem;
+    }
+
 
     /* footer section */
     .footer {
@@ -1006,6 +1256,12 @@ section {
         gap: 3rem;
         grid-template-columns: 1fr 1fr;
 
+    }
+
+    /* scroll Top Button Adding */
+    .scrollBtn {
+        right: 5rem;
+        bottom: 3rem;
     }
 
 
@@ -1082,21 +1338,23 @@ section {
     }
 
     /* market section */
-    .market{
+    .market {
         padding: 2.5rem 10rem;
     }
 
     /* Arrival section */
-    .arrivals{
+    .arrivals {
         padding: 2.5rem 10rem;
     }
+
     .arrivals .arr-row {
 
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
     }
+
     /* brand section */
-    .brand{
+    .brand {
         padding: 2.5rem 10rem;
     }
 
@@ -1104,6 +1362,14 @@ section {
 
         grid-template-columns: 1fr 1fr 1fr;
 
+    }
+
+      /* Service section */
+      .our-service{
+        padding: 2.5rem 10rem;
+    }
+    .our-service .service-box{
+        grid-template-columns: 1fr 1fr;
     }
 
     /* footer section */
@@ -1237,6 +1503,7 @@ section {
     .arrivals {
         padding: 5rem 8rem;
     }
+
     .arrivals h4 {
 
         font-size: 2rem;
@@ -1253,10 +1520,20 @@ section {
         gap: 2.5rem;
     }
 
+
+       /* Service section */
+       .our-service{
+        padding: 2.5rem 8rem;
+    }
+    .our-service .service-box{
+        grid-template-columns: 1fr 1fr;
+    }
+
     /* brand section */
     .brand {
         padding: 2.5rem 8rem;
     }
+
     .brand h4 {
 
         font-size: 2rem;
@@ -1295,14 +1572,16 @@ section {
     .home .slide .col-1 h1 {
         font-size: 2.2rem;
     }
-    
+
     /* Arrival section*/
     .arrivals {
-        padding: 5rem 4rem;
+        padding: 5rem 6rem;
     }
-    .arrivals h4{
+
+    .arrivals h4 {
         font-size: 2.2rem;
     }
+
     .arrivals h1 {
 
         font-size: 2.5rem;
@@ -1333,13 +1612,22 @@ section {
         grid-template-columns: 1fr 1fr;
 
     }
-    .brand h4{
+
+    .brand h4 {
         font-size: 2.2rem;
     }
 
     .brand h1 {
         font-size: 2.5rem;
     }
+
+           /* Service section */
+           .our-service{
+            padding: 2.5rem 6rem;
+        }
+        .our-service .service-box{
+            grid-template-columns: 1fr;
+        }
 
     /* footer section */
     .footer .footer-row {
@@ -1349,9 +1637,15 @@ section {
 
     }
 
+    /* scroll Top Button Adding */
+    .scrollBtn {
+        right: 2rem;
+        bottom: 3rem;
+    }
+
 
 }
- 
+
 /* ******************************@media(max-width:420px)**************************************** */
 @media(max-width:420px) {
 
@@ -1441,9 +1735,10 @@ section {
     .header .logo img {
         width: 70px;
     }
+
     /* market section */
 
-/* arrival section */
+    /* arrival section */
     .arrivals {
         padding: 2.5rem 6rem;
     }
@@ -1481,5 +1776,14 @@ section {
     .brand h1 {
         font-size: 1.5rem;
     }
+
+         /* Service section */
+         .our-service{
+            padding: 2.5rem 4rem;
+        }
+        .our-service .service-box{
+            grid-template-columns: 1fr;
+        }
+
 
 }
