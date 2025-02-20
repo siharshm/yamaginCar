@@ -590,16 +590,18 @@ section {
 .arrivals .arr-row {
 
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2.5rem;
 }
-.arr-row .arr-col{
+
+.arr-row .arr-col {
     padding: 1rem;
     box-shadow: 0 0 5px #646161;
     background: #fff;
     border-radius: 10px;
     text-align: justify;
 }
+
 .arr-row .arr-col .image {
     width: 100%;
     height: 20rem;
@@ -608,6 +610,7 @@ section {
     transition: 0.5s ease;
 
 }
+
 .arr-row .arr-col .image img {
     position: relative;
     width: 100%;
@@ -618,53 +621,64 @@ section {
     transition: 0.5s ease;
 
 }
+
 .arr-row .arr-col .image:hover img {
     transform: scale(1.3);
 }
+
 .arr-row .arr-col h5 {
     font-size: 1.5rem;
     padding: 1rem 0;
     color: var(--text-color);
 }
+
 .arr-row .arr-col .rating {
     display: flex;
     gap: 1rem;
     align-items: center;
     padding-bottom: 0.5rem;
 }
+
 .arr-col .rating .stars {
     color: var(--main-color);
     font-size: 1.2rem;
 }
+
 .arr-col .rating .review span {
     font-size: 1.3rem;
     font-weight: 600;
     color: #646161;
 }
+
 .arr-col .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
 .arr-col .features span {
     font-size: 1.4rem;
     color: #646161;
 }
+
 .arr-col .features span i {
     color: var(--main-color);
     padding-right: 0.3rem;
 }
+
 .arr-col .price {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .arr-col .price p {
     color: var(--main-color);
     font-size: 1.6rem;
     font-weight: 600;
 }
+
 .arr-col .price button {
     background: var(--main-color);
     padding: 0.8rem 2.8rem;
@@ -673,34 +687,39 @@ section {
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .arr-col .price button:hover {
     background: var(--text-color);
 }
 
 
 /* -------------------------Brand section start ------------------------ */
-.brand{
-text-align: center;
-padding-top: 7rem;
+.brand {
+    text-align: center;
+    padding-top: 7rem;
 
 }
-.brand .brand-row{
+
+.brand .brand-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2.5rem;
 }
-.brand-row .brand-col{
+
+.brand-row .brand-col {
     position: relative;
     padding: 1rem;
-    background:#FEF3F4;
+    background: #FEF3F4;
     border-radius: 12px;
     box-shadow: 0 0 5px #646161;
     transition: 0.4s;
 }
-.brand-row .brand-col:hover{
+
+.brand-row .brand-col:hover {
     transform: translateY(-10px);
 }
-.brand-row .brand-col img{
+
+.brand-row .brand-col img {
     width: 100%;
     height: 14rem;
 }
@@ -731,7 +750,8 @@ padding-top: 7rem;
     color: var(--main-color);
     padding-left: 1rem;
 }
-.brand-row .brand-col h5{
+
+.brand-row .brand-col h5 {
     font-size: 1.6rem;
     color: var(--text-color);
     font-weight: 600;
@@ -741,62 +761,70 @@ padding-top: 7rem;
 /* foooter section start */
 
 
-.footer{
-    background:var(--text-color);
-    
+.footer {
+    background: var(--text-color);
+
 }
 
-.footer .footer-row{
+.footer .footer-row {
     padding: 2rem 16rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10rem;
 }
-.footer-row .footer-col h1{
+
+.footer-row .footer-col h1 {
     color: #fff;
     font-size: 2rem;
 }
-.footer-row .footer-col h1 span{
+
+.footer-row .footer-col h1 span {
     color: var(--main-color);
 }
-.footer-row .footer-col img{
-width: 200px;
-height: 100px;
-margin-bottom: 0.5rem;
+
+.footer-row .footer-col img {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 0.5rem;
 }
 
-.footer-row .footer-col h3{
+.footer-row .footer-col h3 {
     color: #fff;
     font-size: 1rem;
-    
+
 }
-.footer-row .footer-col h5{
+
+.footer-row .footer-col h5 {
     color: #fff;
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
 }
-.footer-row .footer-col span{
+
+.footer-row .footer-col span {
     display: block;
     color: #fff;
     font-size: 1.9rem;
     padding-bottom: 1rem;
 }
-.footer-row .footer-col span i{
+
+.footer-row .footer-col span i {
     background: var(--main-color);
     padding: 0.5rem;
     border-radius: 10px;
     margin-right: 5px;
     font-size: 18px;
-   
+
 }
-.footer-col .contact-item{
+
+.footer-col .contact-item {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between icon and text */
+    gap: 10px;
+    /* Space between icon and text */
     margin-bottom: 12px;
 }
 
-.footer-col .contact-item i{
+.footer-col .contact-item i {
     background: var(--main-color);
     padding: 0.5rem;
     border-radius: 10px;
@@ -804,13 +832,15 @@ margin-bottom: 0.5rem;
     font-size: 18px;
     color: #fff;
 }
-.footer-col .contact-item p{
+
+.footer-col .contact-item p {
     margin: 0;
     color: #fff;
     font-size: 1.5rem;
-    
+
 }
-.footer-row .footer-col h5{
+
+.footer-row .footer-col h5 {
     color: #fff;
     font-size: 1.9rem;
     margin: 1rem 0;
@@ -818,8 +848,9 @@ margin-bottom: 0.5rem;
     letter-spacing: 1px;
     position: relative;
 }
-.footer-row .footer-col h5::before{
-    content:'' ;
+
+.footer-row .footer-col h5::before {
+    content: '';
     position: absolute;
     width: 100px;
     height: 2px;
@@ -827,24 +858,27 @@ margin-bottom: 0.5rem;
     background: #fff;
     bottom: 0;
 }
-.footer-row .footer-col h5::after{
-    content:'' ;
+
+.footer-row .footer-col h5::after {
+    content: '';
     position: absolute;
     width: 20px;
     height: 2px;
     border-radius: 3px;
-    background:var(--main-color);
+    background: var(--main-color);
     bottom: 0;
     left: 40px;
 }
-.footer-row .footer-col a{
+
+.footer-row .footer-col a {
     display: block;
     color: #fff;
     font-size: 1.6rem;
     padding-top: 1rem;
     transition: 0.4s ease;
 }
-.footer-row .footer-col a:hover{
+
+.footer-row .footer-col a:hover {
     padding-left: 5px;
     color: var(--main-color);
 }
@@ -855,10 +889,10 @@ margin-bottom: 0.5rem;
 
 
 
-@media(max-width:1300px){
-}
-.brand .brand-row{
-    
+@media(max-width:1300px) {}
+
+.brand .brand-row {
+
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
 }
@@ -895,10 +929,10 @@ margin-bottom: 0.5rem;
 
     }
 
-    .brand .brand-row{
-    
+    .brand .brand-row {
+
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+
     }
 
 }
@@ -937,22 +971,44 @@ margin-bottom: 0.5rem;
         padding: 0.5rem 5.5%;
     }
 
-  /* --------------------------------------Arrival section @991 ---------------------------------------*/
+    /*Arrival section*/
+    .arrivals{
+        padding: 2.5rem 12rem;
+    }
     .arrivals .arr-row {
 
-        grid-template-columns:1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 2.5rem;
     }
-    .brand .brand-row{
-    
-        grid-template-columns: 1fr 1fr 1fr;
-    
-    }
-    .brand  h1{
-        font-size: 4rem;
+    /* brand section */
+    .brand {
+        padding: 2.5rem 12rem;
     }
 
+    .brand .brand-row {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .brand h1 {
+        font-size: 4rem;
+    }
     
+
+    /* footer section */
+    .footer {
+        padding: 2.5rem 1rem;
+    }
+
+    .footer .footer-row {
+        padding: 2rem 7rem;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
 
 }
 
@@ -968,7 +1024,7 @@ margin-bottom: 0.5rem;
         display: none;
     }
 
-    /*------------------------------------- navabar query @768 ------------------------------------------*/
+    /*navabar query*/
 
     #menuBtn {
         font-size: 4rem;
@@ -1025,27 +1081,48 @@ margin-bottom: 0.5rem;
         display: block;
     }
 
-     /* --------------------------------------Arrival section @768 ---------------------------------------*/
-     .arrivals .arr-row {
+    /* market section */
+    .market{
+        padding: 2.5rem 10rem;
+    }
 
-        grid-template-columns:1fr;
+    /* Arrival section */
+    .arrivals{
+        padding: 2.5rem 10rem;
+    }
+    .arrivals .arr-row {
+
+        grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
     }
-
-    .brand .brand-row{
-    
-        grid-template-columns: 1fr 1fr;
-    
+    /* brand section */
+    .brand{
+        padding: 2.5rem 10rem;
     }
-    .brand  h1{
-        font-size: 3.5rem;
+
+    .brand .brand-row {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    /* footer section */
+    .footer {
+        padding: 2.5rem 1rem;
+    }
+
+    .footer .footer-row {
+        padding: 2rem 7rem;
+        gap: 3rem;
+        grid-template-columns: 1fr;
+
     }
 
 
 
 }
 
-/* ******************************@media(max-width:600px)**************************************** */
+/* ***********************************@media(max-width:600px)**************************************** */
 
 @media(max-width:600px) {
 
@@ -1054,7 +1131,7 @@ margin-bottom: 0.5rem;
         display: none;
     }
 
-    /* -----------------------------------navabar query @600---------------------------------------- */
+    /* navabar query */
 
     #menuBtn {
         font-size: 4.5rem;
@@ -1114,7 +1191,7 @@ margin-bottom: 0.5rem;
         display: block;
     }
 
-    /*------------------------------------- home section query @600-------------------------------------- */
+    /*home section query*/
 
     .home .slide {
 
@@ -1146,25 +1223,61 @@ margin-bottom: 0.5rem;
     }
 
 
-    /*-------------------------------- market section query @600----------------------------------------- */
+    /*market section query */
 
     .market .col-4 h3 {
         font-size: 2.9rem;
     }
 
     .market {
-        padding: 2.5rem 10rem;
+        padding: 2.5rem 8rem;
     }
-      /* --------------------------------------Arrival section @600 ---------------------------------------*/
-      .arrivals{
+
+    /* Arrival section */
+    .arrivals {
         padding: 5rem 8rem;
-      }
-       .arrivals h1 {
-        
+    }
+    .arrivals h4 {
+
         font-size: 2rem;
-    
-       
-    } 
+    }
+
+    .arrivals h1 {
+
+        font-size: 3rem;
+    }
+
+    .arrivals .arr-row {
+
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    /* brand section */
+    .brand {
+        padding: 2.5rem 8rem;
+    }
+    .brand h4 {
+
+        font-size: 2rem;
+    }
+
+    .brand h1 {
+
+        font-size: 3rem;
+    }
+
+    /* footer section */
+    .footer {
+        padding: 2.5rem 1rem;
+    }
+
+    .footer .footer-row {
+        padding: 2rem 7rem;
+        gap: 3rem;
+        grid-template-columns: 1fr;
+
+    }
 
 
 }
@@ -1173,7 +1286,7 @@ margin-bottom: 0.5rem;
 
 @media(max-width:450px) {
 
-    /*-------------------------------- home section query @450-------------------------------------- */
+    /* home section query */
 
     .home .slide .col-1 h4 {
         font-size: 1.3rem;
@@ -1182,17 +1295,20 @@ margin-bottom: 0.5rem;
     .home .slide .col-1 h1 {
         font-size: 2.2rem;
     }
-      /* --------------------------------------Arrival section @450 ---------------------------------------*/
-      .arrivals{
-        padding: 5rem 10rem;
-      }
-       .arrivals h1 {
-        
-        font-size: 2rem;
     
-       
-    } 
-    /* -----------------------------------market section query@450--------------------------------------- */
+    /* Arrival section*/
+    .arrivals {
+        padding: 5rem 6rem;
+    }
+    .arrivals h4{
+        font-size: 2.2rem;
+    }
+    .arrivals h1 {
+
+        font-size: 2.5rem;
+    }
+
+    /* market section query- */
     .market .col-3 img.one {
 
         height: 35rem;
@@ -1204,30 +1320,39 @@ margin-bottom: 0.5rem;
     }
 
     .market {
-        padding: 2.5rem 8rem;
+        padding: 2.5rem 6rem;
     }
-    .brand{
-        padding:2.5rem 8rem;
+
+    /* brand section */
+    .brand {
+        padding: 2.5rem 6rem;
     }
-    .brand .brand-row{
-    
+
+    .brand .brand-row {
+
         grid-template-columns: 1fr 1fr;
-    
+
     }
-   
-    .brand  h1{
+    .brand h4{
+        font-size: 2.2rem;
+    }
+
+    .brand h1 {
         font-size: 2.5rem;
     }
-    .footer .footer-row{
+
+    /* footer section */
+    .footer .footer-row {
         padding: 2rem 7rem;
-       gap: 3rem;
+        gap: 3rem;
         grid-template-columns: 1fr;
-       
+
     }
 
 
 }
-
+ 
+/* ******************************@media(max-width:420px)**************************************** */
 @media(max-width:420px) {
 
 
@@ -1235,7 +1360,7 @@ margin-bottom: 0.5rem;
         display: none;
     }
 
-    /* -------------------------------navabar query@420------------------------------------- */
+    /* navabar query */
 
     #menuBtn {
         font-size: 4rem;
@@ -1299,13 +1424,14 @@ margin-bottom: 0.5rem;
 /* ******************************@media(max-width:360px)**************************************** */
 
 
- @media(max-width:360px){
-/* --------------------------------------Arrival section @360 ---------------------------------------*/
+@media(max-width:360px) {
+
     .header h4 span {
 
         display: flex;
         font-size: 1rem;
     }
+
     .header h4 {
 
         display: flex;
@@ -1315,34 +1441,45 @@ margin-bottom: 0.5rem;
     .header .logo img {
         width: 70px;
     }
- .arrivals{
-    padding: 0 6rem;
-  }
-  .arrivals h4 {
-    
-    font-size: 1.2rem;  
-} 
-   .arrivals h1 {
-    
-    font-size: 1.5rem;  
-} 
-  /* --------------------------------------Arrival section @360 ---------------------------------------*/
-  .arrivals{
-    padding: 5rem 8rem;
-  }
-  .brand{
-    padding:2.5rem 6rem;
-}
-.brand .brand-row{
+    /* market section */
 
-    grid-template-columns: 1fr 1fr;
+/* arrival section */
+    .arrivals {
+        padding: 2.5rem 6rem;
+    }
 
-}
-.brand  h4{
-    font-size: 1.5rem;
-}
-.brand  h1{
-    font-size: 2rem;
-}
+    .arrivals h4 {
+
+        font-size: 1.2rem;
+    }
+
+    .arrivals h1 {
+
+        font-size: 1.5rem;
+    }
+
+    .arrivals {
+        padding: 5rem 4rem;
+    }
+
+    /* brand section */
+
+    .brand {
+        padding: 2.5rem 4rem;
+    }
+
+    .brand .brand-row {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .brand h4 {
+        font-size: 1.2rem;
+    }
+
+    .brand h1 {
+        font-size: 1.5rem;
+    }
 
 }
