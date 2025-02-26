@@ -27,7 +27,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s linear;
 
 }
@@ -126,9 +126,9 @@ html {
 
 }
 
-.header.sticky {
+/* .header.sticky {
     padding: 0 9.5%;
-}
+} */
 
 .header h4 span {
 
@@ -697,6 +697,7 @@ section {
 .brand {
     text-align: center;
     padding-top: 7rem;
+    padding-bottom: 7rem;
 
 }
 
@@ -771,6 +772,7 @@ section {
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
+
 .our-service .service-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -818,45 +820,52 @@ section {
     text-align: center;
 }
 
-.card p{
+.card p {
     color: #6c757d;
 }
+
 .card:hover i,
-.card:hover p
-{
+.card:hover p {
     color: #fff;
 }
-.card:hover h2{
+
+.card:hover h2 {
     font-weight: 400;
 }
-.card:nth-child(1):hover{
+
+.card:nth-child(1):hover {
     background: linear-gradient(45deg,
-    rgba(255,28,8,0.7)0%, rgba(185, 83, 74, 0.7)100%),url('../img/services/reg.jpg');
+            rgba(255, 28, 8, 0.7)0%, rgba(185, 83, 74, 0.7)100%), url('../img/services/reg.jpg');
     background-size: cover;
 }
-.card:nth-child(2):hover{
+
+.card:nth-child(2):hover {
     background: linear-gradient(45deg,
-    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/service.jpg');
+            rgba(255, 28, 8, 0.7)0%, rgba(204, 85, 74, 0.7)100%), url('../img/services/service.jpg');
     background-size: cover;
 }
-.card:nth-child(3):hover{
+
+.card:nth-child(3):hover {
     background: linear-gradient(45deg,
-    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/warranty-image.jpg');
+            rgba(255, 28, 8, 0.7)0%, rgba(204, 85, 74, 0.7)100%), url('../img/services/warranty-image.jpg');
     background-size: cover;
 }
-.card:nth-child(4):hover{
+
+.card:nth-child(4):hover {
     background: linear-gradient(45deg,
-    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/advice.jpg');
+            rgba(255, 28, 8, 0.7)0%, rgba(204, 85, 74, 0.7)100%), url('../img/services/advice.jpg');
     background-size: cover;
 }
-.card:nth-child(5):hover{
+
+.card:nth-child(5):hover {
     background: linear-gradient(45deg,
-    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/leasing.jpg');
+            rgba(255, 28, 8, 0.7)0%, rgba(204, 85, 74, 0.7)100%), url('../img/services/leasing.jpg');
     background-size: cover;
 }
-.card:nth-child(6):hover{
+
+.card:nth-child(6):hover {
     background: linear-gradient(45deg,
-    rgba(255,28,8,0.7)0%, rgba(204, 85, 74, 0.7)100%),url('../img/services/clearing-forwarding.jpg');
+            rgba(255, 28, 8, 0.7)0%, rgba(204, 85, 74, 0.7)100%), url('../img/services/clearing-forwarding.jpg');
     background-size: cover;
 }
 
@@ -871,7 +880,7 @@ section {
 }
 
 .footer .footer-row {
-    padding: 2rem 16rem;
+    padding: 2rem 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10rem;
@@ -1043,7 +1052,16 @@ section {
 
 .inventory a {
     color: #fff;
+    font-size: 2rem;
+}
+
+.inventory p {
     font-size: 1.5rem;
+}
+
+.inventory i {
+    margin-top: 0.7rem;
+    font-size: 2rem;
 }
 
 
@@ -1109,7 +1127,7 @@ section {
 }
 
 /* -------------------------------------------Services page----------------------------------------  */
-.services{
+.services {
     padding: 7rem 16rem;
 }
 
@@ -1120,7 +1138,8 @@ section {
     padding-bottom: 2rem;
     text-transform: capitalize;
 }
-.services h1 span{
+
+.services h1 span {
     color: var(--main-color);
 }
 
@@ -1128,7 +1147,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
 .service-card {
@@ -1182,25 +1201,342 @@ section {
     margin-left: 8px;
 } */
 
+/*--------------------------------------- Contact us page--------------------------------------------------- */
+
+.contact .contact-row {
+    padding: 4.5rem 12.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.contact-row .contact-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fddddf;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+.contact-row .contact-col:hover {
+    transform: translateY(-10px);
+}
+
+.contact-row .contact-col i {
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+.contact-row .contact-col h6 {
+    padding: 6px 0;
+    font-size: 20px;
+    color: #646464;
+
+}
+
+.contact-row .contact-col p {
+    font-size: 14px;
+    color: #646464;
+}
+
+.contact .touch-row {
+    padding: 4.5rem 12.5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.touch-row .touch-col img {
+    width: 100%;
+    height: auto;
+}
+
+.touch-row .touch-col h5 {
+    font-size: 27px;
+    color: #646161;
+}
+
+.touch-row .touch-col p {
+    font-size: 14px;
+    color: #646161;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.touch-row .touch-col .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* background: #d30d0d; */
+}
+
+.touch-row .touch-col .box .inputBx,
+.touch-row .touch-col .inputBx {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #646161;
+    border-radius: 8px;
 
 
+}
+
+.touch-row .touch-col .box .inputBx input,
+.touch-row .touch-col .inputBx input {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+
+}
+
+.touch-row .touch-col .box .inputBx input:focus,
+.touch-row .touch-col .inputBx input:focus,
+.touch-row .touch-col textarea:focus {
+    border: 1px solid var(--main-color);
+}
+
+.touch-row .touch-col textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #646161;
+    border-radius: 8px;
+    margin-top: 20px;
+    resize: none;
+}
+
+.touch-row .touch-col button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.touch-row .touch-col button:hover {
+    background: var(--text-color);
+}
+
+.contact .map {
+    padding-bottom: 7rem;
+}
+
+/* why chooese us  */
+.whychooseus {
+    text-align: center;
+
+}
 
 
+.whychooseus h1 {
+    padding-bottom: 3rem;
+    font-size: 4.7rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: var(--text-color);
+
+}
+
+.whychooseus h1 span {
+    color: var(--main-color);
+}
+
+.whychooseus .whychooseus-row {
+    /* background: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whychooseus .whychooseus-col-1 {
+    width: 100%;
+}
+
+.whychooseus-col-1 .choose__image img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.whychooseus-col-2 h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.whychooseus-col-2 .group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.whychooseus-col-2 .whychoose-item {
+    display: flex;
+    align-items: start;
+    text-align: start;
+    gap: 15px;
+}
+
+.group .whychoose-item i {
+    background: var(--main-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.whychoose-item .desc h4 {
+    font-size: 14px;
+}
+
+.whychoose-item .desc p {
+    font-size: 12px;
+    color: #646161;
+}
+
+/* ----------------------------------------how to buy page--------------------------------  */
+.howtobuycar .howtobuycar-row {
+    padding: 4.5rem 12.5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.howtobuycar .howtobuycar-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background:#f7f2f2;
+    padding: 30px;
+    border-radius: 2px;
+    transition: 0.5s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.howtobuycar-row .howtobuycar-col:hover {
+    transform: translateY(-10px);
+   
+    
+}
 
 
+.howtobuycar-row .howtobuycar-col h1 {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.howtobuycar-row .howtobuycar-col h2 {
+    padding: 6px 0;
+    font-size: 20px;
+    color: var(--text-color);
+
+}
+
+.howtobuycar-row .howtobuycar-col p {
+    font-size: 14px;
+    color: #646464;
+}
 
 
+.faq-item {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.faq-answer {
+    /* display: none; */
+    padding-top: 10px;
+}
 
+.cta {
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/howtobuycar/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+.cta h2 {
+    color: #fff;
+    font-size: 3rem;
+}
 
+.cta .btn {
 
+    margin-top: 40px;
+    padding: 15px 30px;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s ease;
 
+}
 
+.btn:hover {
+    background: var(--text-color);
+}
 
+.faq-container {
+    background: #f7f2f2;
+    padding: 7rem 2rem;
+    /* max-width: 600px; */
+    margin: auto;
+}
 
+.faq-item {
+    background: #f1f1f1;
+    /* background: white; */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
 
+.faq-question {
+    /* background: #d30d0d; */
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    /* background: #f1f1f1; */
+    cursor: pointer;
+    display: block;
+    outline: none;
 
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
 
 
 
@@ -1253,6 +1589,21 @@ section {
     .brand .brand-row {
 
         grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+
+    /* contact page  */
+    .contact .contact-row {
+
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+    /* howtobuycar page  */
+    .howtobuycar .howtobuycar-row {
+
+        grid-template-columns: repeat(2, 1fr);
+
 
     }
 
@@ -1324,7 +1675,8 @@ section {
     .our-service h1 {
         font-size: 4rem;
     }
-    .our-service{
+
+    .our-service {
         padding: 2.5rem 12rem;
     }
 
@@ -1346,6 +1698,11 @@ section {
         right: 5rem;
         bottom: 3rem;
     }
+
+
+    /* contact page  */
+
+
 
 
 
@@ -1387,9 +1744,9 @@ section {
         display: block;
     }
 
-    .header.sticky {
+    /* .header.sticky {
         padding: 0.6rem 9.5%;
-    }
+    } */
 
     nav .navbar ul li {
         padding: 1rem 0;
@@ -1407,13 +1764,19 @@ section {
     .header h4 span {
 
         display: flex;
-        font-size: 2rem;
+        font-size: 2.5rem;
+
     }
 
     .header h4 {
 
         display: flex;
-        font-size: 2rem;
+        font-size: 2.5rem;
+
+    }
+
+    .header .logo img {
+        width: 60px;
     }
 
     nav .others i {
@@ -1447,12 +1810,13 @@ section {
 
     }
 
-      /* Service section */
-   
-      .our-service{
+    /* Service section */
+
+    .our-service {
         padding: 2.5rem 10rem;
     }
-    .our-service .service-box{
+
+    .our-service .service-box {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1467,13 +1831,86 @@ section {
         grid-template-columns: 1fr;
 
     }
-      /* market-about */
-  .market-about{
-    padding: 2.5rem 10rem;
-}
+
+    /* market-about */
+    .market-about {
+        padding: 2.5rem 10rem;
+    }
 
 
+    /* contact page */
+    .contact {
+        padding: 0;
+    }
 
+    .touch-row .touch-col .box {
+
+        grid-template-columns: repeat(1, 1fr);
+
+        /* background: #d30d0d; */
+    }
+
+    .contact .contact-row {
+
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .contact .touch-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services {
+        padding: 2.5rem 10rem;
+    }
+
+    .service-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 15px;
+    }
+
+    .service-card p {
+        text-align: justify;
+    }
+
+    /* how to buy page  */
+    
+    .howtobuycar .howtobuycar-row {
+        
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .cta h2 {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    
+    .cta .btn {
+    
+        margin-top: 30px;
+        padding: 10px 10px;
+        background: var(--main-color);
+        color: #fff;
+        font-size: 15px;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: 0.5s ease;
+    
+    }
+    
+    .btn:hover {
+        background: var(--text-color);
+    }
+   
 }
 
 /* ***********************************@media(max-width:600px)**************************************** */
@@ -1503,19 +1940,20 @@ section {
     .header h4 span {
 
         display: flex;
-        font-size: 1.5rem;
+        font-size: 2rem;
+
     }
 
     .header h4 {
 
         display: flex;
-        font-size: 1.5rem;
+        font-size: 2rem;
+
     }
 
     .header .logo img {
-        width: 90px;
+        width: 55px;
     }
-
 
     nav .navbar .navlink {
         position: absolute;
@@ -1533,9 +1971,9 @@ section {
         display: block;
     }
 
-    .header.sticky {
+    /* .header.sticky {
         padding: 0.6rem 9.5%;
-    }
+    } */
 
     nav .navbar ul li {
         padding: 1rem 0;
@@ -1609,11 +2047,12 @@ section {
     }
 
 
-       /* Service section */
-       .our-service{
+    /* Service section */
+    .our-service {
         padding: 2.5rem 8rem;
     }
-    .our-service .service-box{
+
+    .our-service {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1621,7 +2060,7 @@ section {
     .brand {
         padding: 2.5rem 8rem;
     }
-    
+
     .brand .brand-row {
 
         grid-template-columns: 1fr 1fr 1fr;
@@ -1637,7 +2076,8 @@ section {
 
         font-size: 3rem;
     }
-/* our services */
+
+    /* our services */
     .our-service h1 {
         font-size: 3rem;
     }
@@ -1653,11 +2093,38 @@ section {
         grid-template-columns: 1fr;
 
     }
-  /* market-about */
-  .market-about{
-    padding: 2.5rem 8rem;
+
+    /* market-about */
+    .market-about {
+        padding: 2.5rem 8rem;
+    }
+
+    /* contact page */
+    .contact {
+        padding: 0;
+    }
+
+
 }
 
+@media(max-width:500px) {
+    .header h4 span {
+
+        display: flex;
+        font-size: 1.8rem;
+
+    }
+
+    .header h4 {
+
+        display: flex;
+        font-size: 1.8rem;
+
+    }
+
+    .header .logo img {
+        width: 55px;
+    }
 }
 
 /* ******************************@media(max-width:450px)**************************************** */
@@ -1672,6 +2139,24 @@ section {
 
     .home .slide .col-1 h1 {
         font-size: 2.2rem;
+    }
+
+    .header h4 span {
+
+        display: flex;
+        font-size: 1.5rem;
+
+    }
+
+    .header h4 {
+
+        display: flex;
+        font-size: 1.5rem;
+
+    }
+
+    .header .logo img {
+        width: 50px;
     }
 
     /* Arrival section*/
@@ -1722,16 +2207,18 @@ section {
         font-size: 2.5rem;
     }
 
-           /* Service section */
+    /* Service section */
     .our-service h1 {
         font-size: 2.2rem;
     }
-           .our-service{
-            padding: 2.5rem 6rem;
-        }
-        .our-service .service-box{
-            grid-template-columns: 1fr;
-        }
+
+    .our-service {
+        padding: 2.5rem 6rem;
+    }
+
+    .our-service .service-box {
+        grid-template-columns: 1fr;
+    }
 
     /* footer section */
     .footer .footer-row {
@@ -1748,30 +2235,91 @@ section {
     }
 
     /* market-about */
-    .market-about{
+    .market-about {
         padding: 2.5rem 6rem;
     }
 
-    .services{
+    /* servive page  */
+    .services {
         padding: 2.5rem 6rem;
     }
+
     .service-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        
+
     }
-    .service-card img{
+
+    .service-card img {
         width: 100%;
         height: auto;
         margin: 0 0 15px;
     }
-    .service-card p{
+
+    .service-card p {
         text-align: justify;
     }
-    
+
+    /* contact page */
+    .contact {
+        padding: 0;
+    }
+
+    .touch-row .touch-col button {
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .whychooseus {
+        padding: 2.5rem 6rem;
+    }
+
+    .whychooseus .whychooseus-row {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whychooseus-col-2 .group {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
 
 
+        /* background: #f9d806; */
+    }
+
+    .whychooseus .whychooseus-row img {
+        display: none;
+    }
+
+    .whychooseus-col-2 .whychoose-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        /* background: green; */
+    }
+
+    .whychoose-item .desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .whychoose-item .desc h4 {
+        font-size: 2.5rem;
+    }
+
+    .whychoose-item .desc p {
+        text-align: center;
+    }
 }
 
 /* ******************************@media(max-width:420px)**************************************** */
@@ -1797,7 +2345,7 @@ section {
         display: none;
     }
 
-    .header h4 span {
+    /* .header h4 span {
 
         display: flex;
         font-size: 1.5rem;
@@ -1811,7 +2359,7 @@ section {
 
     .header .logo img {
         width: 75px;
-    }
+    } */
 
     nav .navbar .navlink {
         position: absolute;
@@ -1829,9 +2377,9 @@ section {
         display: block;
     }
 
-    .header.sticky {
+    /* .header.sticky {
         padding: 0.6rem 9.5%;
-    }
+    } */
 
     nav .navbar ul li {
         padding: 0.7rem 0;
@@ -1843,6 +2391,26 @@ section {
 
 }
 
+@media(max-width:400px) {
+    .header h4 span {
+
+        display: flex;
+        font-size: 1.2rem;
+
+    }
+
+    .header h4 {
+
+        display: flex;
+        font-size: 1.2rem;
+
+    }
+
+    .header .logo img {
+        width: 50px;
+    }
+}
+
 /* ******************************@media(max-width:360px)**************************************** */
 
 
@@ -1851,17 +2419,19 @@ section {
     .header h4 span {
 
         display: flex;
-        font-size: 1rem;
+        font-size: 1.2rem;
+
     }
 
     .header h4 {
 
         display: flex;
-        font-size: 1rem;
+        font-size: 1.2rem;
+
     }
 
     .header .logo img {
-        width: 70px;
+        width: 40px;
     }
 
     /* home section  */
@@ -1869,12 +2439,12 @@ section {
         /* flex: 2 2 30rem; */
         padding-top: 2rem;
     }
-    
+
     .home .slide .col-2 img {
         width: 350px;
         height: 250px;
-       
-        
+
+
     }
 
     /* market section */
@@ -1921,38 +2491,50 @@ section {
         font-size: 1.5rem;
     }
 
-         /* Service section */
+    /* Service section */
     .our-service h1 {
         font-size: 1.5rem;
     }
-         .our-service{
-            padding: 2.5rem 4rem;
-        }
-        .our-service .service-box{
-            grid-template-columns: 1fr;
-        }
 
-        /* market-about */
-        .market-about{
-            padding: 2.5rem 4rem;
-        }
-        .services{
-            padding: 2.5rem 4rem;
-        }
-        .service-card {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            
-        }
-        .service-card img{
-            width: 100%;
-            height: auto;
-            margin: 0 0 15px;
-        }
-        .service-card p{
-            text-align: justify;
-        }
-        
+    .our-service {
+        padding: 2.5rem 4rem;
+    }
+
+    .our-service .service-box {
+        grid-template-columns: 1fr;
+    }
+
+    /* market-about */
+    .market-about {
+        padding: 2.5rem 4rem;
+    }
+
+    .services {
+        padding: 2.5rem 4rem;
+    }
+
+    .service-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 15px;
+    }
+
+    .service-card p {
+        text-align: justify;
+    }
+
+    /* contact page */
+    .contact {
+        padding: 0;
+    }
+
+
 
 }
